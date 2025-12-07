@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Completo com Bootstrap CDN</title>
+    <title>Fabrício Mendes site</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
           rel="stylesheet" 
@@ -41,62 +41,86 @@
         </nav>
         
         <hr>
-
-        <div class="row mt-4 mb-4">
-            <h2>Exemplos de Botões Bootstrap</h2>
-            <p>Botões preenchidos e com contorno.</p>
-            
+        
+        <div class="row mt-4 mb-3">
             <div class="col-12">
-                <button type="button" class="btn btn-primary me-2">Primário</button>
-                <button type="button" class="btn btn-success me-2">Sucesso</button>
-                <button type="button" class="btn btn-danger me-2">Perigo</button>
+                <h3>Breadcrumbs (Caminho de Navegação)</h3>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Componentes</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Navegação</li>
+                  </ol>
+                </nav>
             </div>
         </div>
 
         <div class="row mt-4 mb-4">
-            <h2>Botões com Contorno (Outline)</h2>
             <div class="col-12">
-                <button type="button" class="btn btn-outline-primary me-2">Primário</button>
-                <button type="button" class="btn btn-outline-success me-2">Sucesso</button>
-                <button type="button" class="btn btn-outline-danger me-2">Perigo</button>
+                <h2>Exemplos de Botões Bootstrap</h2>
+                <button type="button" class="btn btn-primary me-2">Primário</button>
+                <button type="button" class="btn btn-success me-2">Sucesso</button>
+                <button type="button" class="btn btn-danger me-2">Perigo</button>
+                <button type="button" class="btn btn-outline-primary me-2">Contorno</button>
+                <button type="button" class="btn btn-outline-warning me-2">Aviso</button>
             </div>
         </div>
         
         <div class="row mt-4 mb-4">
-            <h2>Exemplos de Alertas</h2>
-            <p>Mensagens contextuais importantes.</p>
-            
             <div class="col-12">
+                <h2>Exemplos de Alertas</h2>
                 <div class="alert alert-success" role="alert">
-                  🎉 **Sucesso!** Seus dados foram salvos com sucesso.
+                  🎉 <strong>Sucesso!</strong> Dados processados.
                 </div>
-                <div class="alert alert-danger" role="alert">
-                  ⚠️ **Erro Crítico!** Por favor, revise os campos marcados em vermelho.
-                </div>
-                <div class="alert alert-info" role="alert">
-                  🔔 **Atenção:** Leia o <a href="#" class="alert-link">Guia de Usuário</a> para mais informações.
+                <div class="alert alert-warning" role="alert">
+                  🔔 <strong>Atenção:</strong> Verifique o <a href="#" class="alert-link">registro de logs</a>.
                 </div>
             </div>
         </div>
 
-        <div class="row mt-4 mb-5">
-            <h2>Exemplos de Barras de Progresso</h2>
-            <p>O progresso é definido pelo atributo <code>style="width: X%"</code>.</p>
-            
+        <div class="row mt-5 mb-4">
             <div class="col-12">
-                
+                <h2>Exemplos de Badges (Rótulos)</h2>
+                <h1>Título com Novidade <span class="badge bg-danger">Novo</span></h1>
+                <button type="button" class="btn btn-info position-relative me-3">
+                  Mensagens
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                    7
+                    <span class="visually-hidden">mensagens não lidas</span>
+                  </span>
+                </button>
+                <span class="badge text-bg-success">Ativo</span>
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-5">
+            <div class="col-12">
+                <h2>Exemplos de Barras de Progresso</h2>
                 <div class="progress mb-3" role="progressbar" aria-label="Progresso Básico 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 25%">25% Completo</div>
+                  <div class="progress-bar" style="width: 25%">25%</div>
                 </div>
-                
-                <div class="progress mb-3" role="progressbar" aria-label="Progresso Colorido 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar bg-success" style="width: 50%">50%</div>
-                </div>
-                
                 <div class="progress mb-3" role="progressbar" aria-label="Progresso com Faixas 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                   <div class="progress-bar progress-bar-striped bg-warning" style="width: 75%"></div>
                 </div>
-                
+            </div>
+        </div>
+        
+        <div class="row mt-5 mb-4">
+            <div class="col-12">
+                <h2>Paginação</h2>
+                <nav aria-label="Navegação de página de exemplo">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <a class="page-link">Anterior</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Próxima</a>
+                    </li>
+                  </ul>
+                </nav>
             </div>
         </div>
 
@@ -104,7 +128,7 @@
             <img src="https://via.placeholder.com/286x180" class="card-img-top" alt="Placeholder Imagem">
             <div class="card-body">
                 <h5 class="card-title">Título do Card</h5>
-                <p class="card-text">Este é um exemplo de componente Card do Bootstrap.</p>
+                <p class="card-text">Bloco visual para conteúdo.</p>
                 <a href="#" class="btn btn-primary">Ver Detalhes</a>
             </div>
         </div>
@@ -114,6 +138,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
             crossorigin="anonymous"></script>
-
 </body>
 </html>
